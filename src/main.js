@@ -6,6 +6,6 @@ $(document).ready(() => {
     Hybreed.start(true)
       .then(() => {
           App.start()
-          Broker.channel('main').trigger('start')
+          Broker.channel('main').request('start')
       })
 })

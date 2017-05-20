@@ -2,7 +2,7 @@ function start() {
     if(Broker.channel('login').request('getUserLogged')) {
         Broker.channel('itemsList').request('start')
     } else {
-        Broker.channel('login').request('start') 
+        Broker.channel('login').request('start')
     }
 }
 
@@ -11,5 +11,5 @@ function start() {
 const API = {
   start
 }
-Broker.channel('main').on(API)
+Broker.channel('main').reply(API)
 export default API

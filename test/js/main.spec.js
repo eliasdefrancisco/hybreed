@@ -54,14 +54,14 @@ describe('MAIN MODULE', () => {
     testContext.broker.channel('itemsList').on("start", spy);
     testContext.broker.channel('login').on("start", spy);
 
-    testContext.broker.channel('main').trigger('start');
+    testContext.broker.channel('main').request('start');
     spy.should.have.been.called;
 
   });
 
   it('should show login view if no user is logged in', () => {
     delete localStorage.login;
-    testContext.broker.channel('main').trigger('start');
+    testContext.broker.channel('main').request('start');
     expect($(".login").length).to.equal(1);
   });
 
@@ -70,7 +70,7 @@ describe('MAIN MODULE', () => {
     let usr = testContext.broker.channel('login').request('getUserLogged');
     expect(usr).to.equal('John Doe Garcia');
 
-    testContext.broker.channel('main').trigger('start');
+    testContext.broker.channel('main').request('start');
     expect($(".items-list").length).to.equal(1);
   });
 });
