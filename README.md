@@ -3,6 +3,17 @@ Hybreed is a framework to develop swift and good looking hybrid mobile apps. It'
 
 To achieve the best performance it uses Backbone as the main JavaScript library to build the application's logic.
 
+## One million point advises for Android developers
+* Update Android Studio
+* Install gradle as in https://gradle.org/install manual (3.5)
+* Set gradle route to path var
+* Install cordova 7
+* gulp production
+* cordova run android
+* adb devices -l
+* adb kill-server
+
+
 ## Prior knowledge
 
 For a better understanding of the framework, it's necessary to know the basics of:
@@ -372,6 +383,3 @@ Also, in case that during the development appears the need to install a Cordova 
 ```
 cordova plugin add <cordova-plugin-name> --save
 ```
-
-
-
