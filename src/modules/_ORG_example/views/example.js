@@ -1,4 +1,3 @@
-import {_, Marionette} from '~/src/vendor/libs';
 import Template from './example.html'
 
 export default Marionette.View.extend({
@@ -12,6 +11,6 @@ export default Marionette.View.extend({
     className: 'example',
 
     onAttach() {
-        this.ui.input.ionRangeSlider();
+        this.ui.input.ionRangeSlider()
     }
-});
+})

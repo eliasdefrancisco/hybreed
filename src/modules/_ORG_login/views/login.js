@@ -1,5 +1,4 @@
-import {_, Marionette} from '~/src/vendor/libs';
-import Template from './login.html';
+import Template from './login.html' 
 
 export default Marionette.View.extend({
 
@@ -23,6 +22,6 @@ export default Marionette.View.extend({
     loginButtonPressed() {
         this.trigger('login',
             this.ui.user.val().trim(),
-            this.ui.password.val().trim());
+            this.ui.password.val().trim())
     }
-});
+})

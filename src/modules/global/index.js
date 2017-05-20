@@ -5,7 +5,7 @@ function hello() {
 }
 
 function hello2() {
-  console.log('hello again!');
+  console.log('hello again!')
 }
 
 

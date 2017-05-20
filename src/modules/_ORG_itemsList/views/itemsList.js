@@ -1,6 +1,5 @@
-import {_, Marionette} from '~/src/vendor/libs';
-import ItemTemplate from './item.html';
-import ItemsListTemplate from './itemsList.html';
+import ItemTemplate from './item.html' 
+import ItemsListTemplate from './itemsList.html'
 
 var ChildView = Marionette.View.extend({
 
@@ -11,7 +10,7 @@ var ChildView = Marionette.View.extend({
     triggers: {
         click: 'itemPressed'
     }
-});
+})
 
 export default Marionette.CollectionView.extend({
 
@@ -22,4 +21,4 @@ export default Marionette.CollectionView.extend({
     className: 'items-list',
 
     childView: ChildView
-});
+})

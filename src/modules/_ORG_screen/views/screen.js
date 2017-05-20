@@ -1,4 +1,4 @@
-import {_, Marionette, Snap} from '~/src/vendor/libs';
+import {Snap} from '~/src/vendor/libs'
 import Template from './screen.html'
 
 export default Marionette.View.extend({
@@ -35,23 +35,23 @@ export default Marionette.View.extend({
     snapper: {},
 
     initialize(options) {
-        this.type = options.type || 'no-header';
-        this.title = options.title || '';
-        this.leftButtonOpts = options.leftButtonOpts || {};
-        this.rightButtonOpts = options.rightButtonOpts || {};
+        this.type = options.type || 'no-header'
+        this.title = options.title || ''
+        this.leftButtonOpts = options.leftButtonOpts || {}
+        this.rightButtonOpts = options.rightButtonOpts || {}
     },
 
     onAttach() {
-        this.ui.title.html(this.title);
+        this.ui.title.html(this.title)
         if(this.type == 'snap') {
-            this.initSnap();
-            this.initRightButton();
-            this.ui.header.addClass('with-snap-toggle-button');
+            this.initSnap()
+            this.initRightButton()
+            this.ui.header.addClass('with-snap-toggle-button')
         } else if(this.type == 'normal') {
-            this.initLeftButton();
-            this.initRightButton();
+            this.initLeftButton()
+            this.initRightButton()
         } else { //no-header
-            this.$el.addClass('no-header');
+            this.$el.addClass('no-header')
         }
     },
 
@@ -61,40 +61,40 @@ export default Marionette.View.extend({
             hyperextensible: false,
             touchToDrag: false,
             disable: 'right'
-        });
+        })
     },
 
     initLeftButton() {
         if(this.leftButtonOpts) {
-            this.ui.header.addClass('with-left-button');
-            this.ui.leftButton.addClass(this.leftButtonOpts.class);
+            this.ui.header.addClass('with-left-button')
+            this.ui.leftButton.addClass(this.leftButtonOpts.class)
         }
     },
 
     initRightButton() {
         if(this.rightButtonOpts) {
-            this.ui.header.addClass('with-right-button');
-            this.ui.rightButton.addClass(this.rightButtonOpts.class);
+            this.ui.header.addClass('with-right-button')
+            this.ui.rightButton.addClass(this.rightButtonOpts.class)
         }
     },
 
     leftButtonPressed: function() {
         if(this.leftButtonOpts.callback) {
-            this.leftButtonOpts.callback();
+            this.leftButtonOpts.callback()
         }
     },
 
     rightButtonPressed: function() {
         if(this.rightButtonOpts.callback) {
-            this.rightButtonOpts.callback();
+            this.rightButtonOpts.callback()
         }
     },
 
     snapTogglePressed() {
         if(this.snapper.state().state == 'left') {
-            this.snapper.close();
+            this.snapper.close()
         } else {
-            this.snapper.open('left');
+            this.snapper.open('left')
         }
     }
-});
+})

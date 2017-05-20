@@ -1,5 +1,4 @@
-import {_ ,Marionette} from '~/src/vendor/libs';
-import Template from './menu.html';
+import Template from './menu.html'
 
 export default Marionette.View.extend({
 
@@ -10,4 +9,4 @@ export default Marionette.View.extend({
     triggers: {
         'click .logout': 'logoutPressed'
     }
-});
+})

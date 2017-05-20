@@ -1,10 +1,9 @@
 import ItemsListView from './views/itemsList'
-import {Backbone, Broker} from '~/src/vendor/libs';
 
-var itemsListView;
+var itemsListView
 
 function start() {
-    showExampleView();
+    showExampleView()
 }
 
 function showExampleView() {
@@ -13,31 +12,27 @@ function showExampleView() {
         collection: new Backbone.Collection(
             [{name: 'Item1'}, {name: 'Item2'}, {name: 'Item3'}]
         )
-    });
+    })
 
     itemsListView.on({
 
         'childview:itemPressed': (view) => {
-            Broker.channel('example').trigger('start', view.model);
+            Broker.channel('example').trigger('start', view.model)
         }
-    });
+    })
 
     Broker.channel('screen').trigger('start', {
         type: 'snap',
         title: 'Items List',
         contentView: itemsListView,
         menuView: Broker.channel('menu').request('getView')
-    });
+    })
 }
 
-//
-// API
-//
 
-Broker.channel('itemsList').on({
-    start
-});
-
-export default {
-    start
-};
+// API definition
+const API = {
+  start
+}
+Broker.channel('itemsList').on(API)
+export default API

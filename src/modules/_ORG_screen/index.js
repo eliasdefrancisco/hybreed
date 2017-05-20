@@ -1,8 +1,7 @@
-import App from '~/src/common/app';
-import ScreenView from './views/screen';
-import {Broker} from '~/src/vendor/libs';
+import App from '~/src/common/app'
+import ScreenView from './views/screen'
 
-var screenView;
+var screenView
 
 /*
  options = {
@@ -18,27 +17,23 @@ var screenView;
     },
     contentView: view,
     menuView: view
- };
+ }
  */
 
 function start(options) {
-    screenView = new ScreenView(options);
-    App.showView(screenView);
-    screenView.getRegion('content').show(options.contentView);
+    screenView = new ScreenView(options)
+    App.showView(screenView)
+    screenView.getRegion('content').show(options.contentView)
 
     if(options.menuView) {
-        screenView.getRegion('menu').show(options.menuView);
+        screenView.getRegion('menu').show(options.menuView)
     }
 }
 
-//
-// API
-//
 
-Broker.channel('screen').on({
-    start
-});
-
-export default {
-    start
-};
+// API definition
+const API = {
+  start
+}
+Broker.channel('screen').on(API)
+export default API

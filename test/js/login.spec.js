@@ -66,7 +66,7 @@ describe('LOGIN MODULE', () => {
     var spy = sinon.spy();
     testContext.broker.channel('screen').on('start', spy);
     // Call logout
-    testContext.broker.channel('login').trigger('logout');
+    testContext.broker.channel('login').request('logout');
     // Expect
     expect(localStorage.login).to.be.undefined;
     spy.should.have.been.called;
@@ -78,7 +78,7 @@ describe('LOGIN MODULE', () => {
     var spy = sinon.spy();
     testContext.broker.channel('itemsList').on('start', spy);
     // Then
-    testContext.broker.channel('login').trigger("start");
+    testContext.broker.channel('login').request("start");
     $('.user').val('John Doe Garcia');
     $('.password').val('p4Ssw0rD');
     $('.primary').click();
