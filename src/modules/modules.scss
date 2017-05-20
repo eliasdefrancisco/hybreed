@@ -1,6 +1,6 @@
-@import 'screen/views/screen';
+@import '_screen/views/screen';
 
-@import '_ORG_example/views/example';
-@import '_ORG_itemsList/views/itemsList';
-@import '_ORG_login/views/login';
-@import '_ORG_menu/views/menu';
+@import '__ORG_example/views/example';
+@import '__ORG_itemsList/views/itemsList';
+@import '__ORG_login/views/login';
+@import '__ORG_menu/views/menu';

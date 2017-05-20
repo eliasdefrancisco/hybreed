@@ -6,8 +6,8 @@ import Broker from 'backbone.radio'
 import Hybreed from 'mhyc'
 import Snap from 'snapjs'  // Slide left panel TODO: remove
 import ionRangeslider from 'ion-rangeslider'  // Slides bars TODO: remove
-import Global from '~/src/modules/global'
-import CMS from '~/src/modules/cms'
+import Global from '~/src/modules/_global'
+import CMS from '~/src/modules/_cms'
 
 window.$ = window.jQuery = global.jQuery = $
 window._ = _
