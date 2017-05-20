@@ -21,7 +21,7 @@ function showExampleView() {
         }
     })
 
-    Broker.channel('screen').trigger('start', {
+    Broker.channel('screen').request('start', {
         type: 'snap',
         title: 'Items List',
         contentView: itemsListView,

@@ -3,7 +3,7 @@ import ExampleView from './views/example'
 var exampleView
 
 function start(model) {
-    showExampleView(model) 
+    showExampleView(model)
 }
 
 function showExampleView(model) {
@@ -12,7 +12,7 @@ function showExampleView(model) {
         model: model
     })
 
-    Broker.channel('screen').trigger('start', {
+    Broker.channel('screen').request('start', {
         type: 'normal',
         title: 'Example',
         leftButtonOpts: {

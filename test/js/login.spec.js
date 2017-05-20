@@ -64,7 +64,7 @@ describe('LOGIN MODULE', () => {
   it('should perform logout and show login view', () => {
     // Prepare spy to register login view loading
     var spy = sinon.spy();
-    testContext.broker.channel('screen').on('start', spy);
+    testContext.broker.channel('screen').reply('start', spy);
     // Call logout
     testContext.broker.channel('login').request('logout');
     // Expect

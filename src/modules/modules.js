@@ -4,7 +4,7 @@ import ExampleController from '~/src/modules/_ORG_example'
 import ItemsListController from '~/src/modules/_ORG_itemsList'
 import LoginController from '~/src/modules/_ORG_login'
 import MenuController from '~/src/modules/_ORG_menu'
-import ScreenController from '~/src/modules/_ORG_screen'
+import ScreenController from '~/src/modules/screen'
 
 export {
     MainController,

@@ -35,5 +35,5 @@ function start(options) {
 const API = {
   start
 }
-Broker.channel('screen').on(API)
+Broker.channel('screen').reply(API)
 export default API

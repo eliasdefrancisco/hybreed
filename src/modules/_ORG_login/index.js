@@ -10,7 +10,7 @@ function showLoginView() {
 
     loginView = new LoginView()
 
-    Broker.channel('screen').trigger('start', {
+    Broker.channel('screen').request('start', {
         type: 'no-header',
         contentView: loginView
     })

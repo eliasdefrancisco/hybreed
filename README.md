@@ -298,7 +298,7 @@ It includes the application header, with the controllers for the left and right 
 To do so, if a view have to inherit from screen, on the view's show method it's necessary to summon the start method of the screen's Broker channel, with the desired parameters (header tittle, button right, button left, menu...).
 
 ```
-Broker.channel('screen').trigger('start', {
+Broker.channel('screen').request('start', {
         type: '<normal or without header>',
         title: '<View title>',
         leftButtonOpts: {
