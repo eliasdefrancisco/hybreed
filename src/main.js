@@ -4,7 +4,6 @@ import App from '~/src/common/app';
 import {Hybreed, Broker} from '~/src/vendor/libs';
 
 $(document).ready(() => {
-
     Hybreed.start(true)
       .then(() => {
           App.start();
