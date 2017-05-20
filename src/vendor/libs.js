@@ -1,4 +1,4 @@
-import _ from  'underscore' 
+import _ from  'underscore'
 import $ from 'jquery'
 import Backbone from 'backbone'
 import Marionette from 'backbone.marionette'
@@ -7,6 +7,7 @@ import Hybreed from 'mhyc'
 import Snap from 'snapjs'  // Slide left panel TODO: remove
 import ionRangeslider from 'ion-rangeslider'  // Slides bars TODO: remove
 import Global from '~/src/modules/global'
+import CMS from '~/src/modules/cms'
 
 window.$ = window.jQuery = global.jQuery = $
 window._ = _
@@ -15,6 +16,7 @@ window.Marionette = Marionette
 window.Broker = Broker
 window.Hybreed = Hybreed
 window.Global = Global
+window.CMS = CMS
 
 export {
     _,
