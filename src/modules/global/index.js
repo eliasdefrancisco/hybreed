@@ -1,6 +1,4 @@
-import {Broker} from '~/src/vendor/libs';
-
-// Here there are stuff accesible for all the project by Broker
+// Here there are stuff accesible for all the project
 
 function hello() {
   console.log('hello!')
@@ -13,11 +11,9 @@ function hello2() {
 
 
 
-
 // API definition
 const API = {
   hello,
   hello2
 }
-Broker.channel('global').reply(API)
 export default API

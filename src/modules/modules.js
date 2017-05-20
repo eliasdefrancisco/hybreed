@@ -4,7 +4,6 @@ import LoginController from '~/src/modules/login';
 import MainController from '~/src/modules/main';
 import MenuController from '~/src/modules/menu';
 import ScreenController from '~/src/modules/screen';
-import GlobalController from '~/src/modules/global';
 
 export {
     ExampleController,
@@ -12,6 +11,5 @@ export {
     LoginController,
     MainController,
     MenuController,
-    ScreenController,
-    GlobalController
+    ScreenController
 };
