@@ -3,7 +3,9 @@ Hybreed is a framework to develop swift and good looking hybrid mobile apps. It'
 
 To achieve the best performance it uses Backbone as the main JavaScript library to build the application's logic.
 
-## One million point advises for Android developers
+## One million point advises
+
+### For Android developers
 * Update Android Studio
 * Install gradle as in https://gradle.org/install manual (3.5)
 * Set gradle route to path var
@@ -12,6 +14,12 @@ To achieve the best performance it uses Backbone as the main JavaScript library 
 * cordova run android
 * adb devices -l
 * adb kill-server
+
+### For materialize
+* When you install materialize with npm you have to copy manually js/date_picker/picker.js to dist/js/ in node_modules
+
+### For material design icons
+* When you install material design icons you have to copy manually from  node_modules/material-design-icons/iconfont/ to src/fonts/material-icons/
 
 
 ## Prior knowledge

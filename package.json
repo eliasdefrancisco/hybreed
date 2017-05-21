@@ -42,6 +42,8 @@
         "ion-rangeslider": "^2.1.4",
         "iscroll": "^5.2.0",
         "jquery": "^3.0.0",
+        "material-design-icons": "^3.0.1",
+        "materialize-css": "^0.98.2",
         "mhyc": "^1.0.0",
         "run-sequence": "^1.2.2",
         "snapjs": "^1.2.1",

@@ -9,7 +9,7 @@
 
   .snap-content {
     background: white;
-    overflow: hidden;
+    overflow: auto;
 
     .header {
       @include absolute(0, 0, auto, 0);

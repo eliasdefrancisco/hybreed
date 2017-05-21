@@ -10,6 +10,6 @@ gulp.task('copyIndex', function() {
 });
 
 gulp.task('copyFonts', function() {
-    return gulp.src('src/fonts/**/*.ttf')
+    return gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('www/fonts'));
 });
