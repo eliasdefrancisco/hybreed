@@ -7,6 +7,7 @@ export default Marionette.View.extend({
     className: 'menu',
 
     triggers: {
-        'click .logout': 'logoutPressed'
+        'click .logout': 'logoutPressed',
+        'click .hello-beer': 'helloBeerPressed'
     }
 })

@@ -1,6 +1,6 @@
 function start() {
     if(Broker.channel('login').request('getUserLogged')) {
-        Broker.channel('itemsList').request('start')
+        Broker.channel('helloBeer').request('start')
     } else {
         Broker.channel('login').request('start')
     }

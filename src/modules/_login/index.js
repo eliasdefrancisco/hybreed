@@ -2,6 +2,7 @@ import LoginView from './views/login'
 
 var loginView
 
+
 function start() {
     showLoginView()
 }
@@ -19,7 +20,7 @@ function showLoginView() {
         login(user, password) {
             console.log(`Login with ${user} ${password}`)
             localStorage.login = user
-            Broker.channel('itemsList').trigger('start')
+            Broker.channel('main').request('start')
         }
     })
 }
@@ -29,6 +30,7 @@ function getUserLogged() {
 }
 
 function logout() {
+    console.log('logout .....');
     delete localStorage.login
     showLoginView()
 }

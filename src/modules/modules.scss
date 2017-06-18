@@ -1,6 +1,5 @@
 @import '_screen/views/screen';
+@import '_login/views/login';
+@import '_menu/views/menu';
 
-@import '__ORG_example/views/example';
-@import '__ORG_itemsList/views/itemsList';
-@import '__ORG_login/views/login';
-@import '__ORG_menu/views/menu';
+@import 'helloBeer/views/main';

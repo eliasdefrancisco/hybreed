@@ -6,9 +6,14 @@ function getView() {
 
     menuView.on({
         logoutPressed() {
-            if(confirm('Are you sure you want to logout?')) {
-                Broker.channel('login').trigger('logout')
-            }
+          if(confirm('Are you sure you want to logout?')) {
+              console.log('confirm == true');
+              Broker.channel('login').request('logout')
+          }
+        },
+
+        helloBeerPressed() {
+          Broker.channel('helloBeer').request('start')
         }
     })
 

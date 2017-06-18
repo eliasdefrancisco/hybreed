@@ -1,18 +1,15 @@
+import LoginController from '~/src/modules/_login'
 import MainController from '~/src/modules/_main'
 import ScreenController from '~/src/modules/_screen'
+import MenuController from '~/src/modules/_menu'
 
-import ExampleController from '~/src/modules/__ORG_example'
-import ItemsListController from '~/src/modules/__ORG_itemsList'
-import LoginController from '~/src/modules/__ORG_login'
-import MenuController from '~/src/modules/__ORG_menu'
+import HelloBeer from '~/src/modules/helloBeer'
 
 export {
     MainController,
     ScreenController,
-
-    ExampleController,
-    ItemsListController,
     LoginController,
-    MenuController
+    MenuController,
+    HelloBeer
 
 }
