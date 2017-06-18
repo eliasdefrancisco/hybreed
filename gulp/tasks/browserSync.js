@@ -12,6 +12,7 @@ gulp.task('browserSync', function() {
 
     gulp.watch(['src/index.html', 'src/assets/**/*'], ['reloadCopyFiles']);
     gulp.watch('src/**/*.scss', ['reloadStyles']);
+    gulp.watch('src/**/*.html', ['build']);
 });
 
 gulp.task('reloadCopyFiles', ['copyFiles'], function(){
