@@ -18,8 +18,6 @@ window.Hybreed = Hybreed
 window.Global = Global
 window.CMS = CMS
 
-// Load after jquere and stuff are loaded
-require('materialize-css/dist/js/materialize.min.js')
 
 
 // API

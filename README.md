@@ -15,8 +15,6 @@ To achieve the best performance it uses Backbone as the main JavaScript library 
 * adb devices -l
 * adb kill-server
 
-### For materialize
-* When you install materialize with npm you have to copy manually js/date_picker/picker.js to dist/js/ in node_modules
 
 ### For material design icons
 * When you install material design icons you have to copy manually from  node_modules/material-design-icons/iconfont/ to src/fonts/material-icons/
