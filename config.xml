@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget date="21/07/2016" environment="PRO" id="com.atsistemas.Hybreed" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:rim="http://www.blackberry.com/ns/widgets">
-    <name>Hybreed</name>
-    <description>Hybreed</description>
-    <author email="cem@atsistemas.com" href="http://www.atsistemas.com">atSistemas S.A.</author>
+<widget date="18/06/2017" environment="DEV" id="com.eliasdefrancisco" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:rim="http://www.blackberry.com/ns/widgets">
+    <name>Hybreed base</name>
+    <description>Hybreed base</description>
+    <author email="eliasdefrancisco@gmail.com" href="https://github.com/eliasdefrancisco/hybreed">Elias de Francisco</author>
     <access origin="*" />
     <content src="index.html" />
-    <preference name="Fullscreen" value="true" />
+    <preference name="Fullscreen" value="false" />
     <preference name="Orientation" value="portrait" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="HideKeyboardFormAccessoryBar" value="true" />
