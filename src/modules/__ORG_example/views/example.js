@@ -11,6 +11,6 @@ export default Marionette.View.extend({
     className: 'example',
 
     onAttach() {
-        this.ui.input.ionRangeSlider()
+        // this.ui.input.ionRangeSlider()
     }
 })

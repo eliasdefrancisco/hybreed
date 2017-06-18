@@ -4,8 +4,7 @@ import Backbone from 'backbone'
 import Marionette from 'backbone.marionette'
 import Broker from 'backbone.radio'
 import Hybreed from 'mhyc'
-import Snap from 'snapjs'  // Slide left panel default in Hybreed 2 TODO: refactor to Material
-import ionRangeslider from 'ion-rangeslider'  // Slides bars TODO: remove becouse Material
+import Snap from 'snapjs'
 import Global from '~/src/modules/_global'
 import CMS from '~/src/modules/_cms'
 
@@ -28,7 +27,6 @@ export {
     Broker,
     Hybreed,
     Snap,
-    ionRangeslider,
     Global,
     CMS
 }

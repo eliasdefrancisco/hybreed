@@ -200,7 +200,6 @@ export {
     Broker,
     Hybreed,
     Snap,
-    ionRangeslider,
     <New Package>
 };
 ```
